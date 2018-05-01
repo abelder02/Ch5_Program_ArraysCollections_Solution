@@ -11,7 +11,7 @@ namespace Ch5_Program_ArraysCollections
     {
         static void Main(string[] args)
         {
-            //THIS IS A TEST
+            //Finilazed Commit
             CT.Header(out CT.LengthOfTopLine, "Arrays & Collections",
                 "to figure out Chapter 7");
             
@@ -28,8 +28,8 @@ namespace Ch5_Program_ArraysCollections
             double average = Numbers.Average();
             int max = Numbers.Max();
             int min = Numbers.Min();
-            
-            //FIND AND ADD CLEAR METHOD HERE
+
+            Clear();
             CT.Color("magenta");
             Console.WriteLine("The average of the numbers is {0},"
                 +"\nwhile the minimum value is {1} and the maximum value is {2}.",
@@ -71,6 +71,15 @@ namespace Ch5_Program_ArraysCollections
             }
             CT.Color("WHITE");
             return convertInput;
+        }
+
+        public static void Clear()
+        {
+            CT.AnyKeyToContinue();
+            Console.Clear();
+            CT.Header(out CT.LengthOfTopLine, "Arrays & Collections",
+                "to figure out Chapter 7");
+
         }
     }
 }
